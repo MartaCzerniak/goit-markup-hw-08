@@ -1,0 +1,128 @@
+// --------------------------- MOBILE ------------------------------ //
+
+.section{
+    padding: 60px 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+        &--main-up{
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+         url("../images/main/main-bg-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 0;
+        padding-bottom: 0;
+        }
+    
+        &--about{
+        display:none;
+        }
+    
+         &--team-color{
+        background-color: var(--team-bg-color);
+        }
+    
+        &--footer{
+        background-color:var(--footer-bg-color);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        &--main-up {
+            background-image:linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+             url('../images/main/main-bg-mobile@2x.jpg');
+            }
+        }
+    
+    // --------------------------- TABLET ------------------------------ //
+    
+        @media screen and (min-width:768px) and (max-width: 1999px){
+        &--main-up{
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+         url("../images/main/main-bg-tablet.jpg");
+        background-size: cover;
+            }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        &--main-up {
+            background-image:linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+             url('../images/main/main-bg-tablet@2x.jpg');
+                }
+            }
+        }
+    }
+    
+    // --------------------------- DESKTOP ------------------------------ //
+    
+        @media screen and (min-width: 1200px){
+        .section{
+        padding: 94px 0;
+    
+        &--main-up{
+        padding-top: 0;
+        padding-bottom: 0;
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+         url("../images/main/main-bg-desktop.jpg");
+        background-size: cover;
+            }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        &--main-up {
+            padding-top: 0;
+            padding-bottom: 0;
+            background-image:linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+             url('../images/main/main-bg-dekstop@2x.jpg');
+                }
+            }
+    
+        &--about{
+        display: initial;
+        }
+    
+        &--footer{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+    }
+        }
+        /*
+        .section{
+        padding: 94px 0;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        &--main-down{
+        padding-bottom: 0;
+        }
+        &--about{
+        position:relative;
+        }
+        &--team-color{
+        background-color: var(--team-bg-color);
+        }
+        &--footer{
+        background-color:var(--footer-bg-color);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
+    } */
